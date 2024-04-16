@@ -1,16 +1,18 @@
-import DashboardMenu from "@/components/dashboard-menu";
-import { Col, Container, Row } from "react-bootstrap";
+import DashboardHeader from "@/components/dashboard-header";
+import { Container } from "react-bootstrap";
 
+export const metadata = {
+  title: {
+    absolute: "Dashboard", //template i ezer
+  },
+  description: "About our company",
+};
 const DashboardLayout = ({ children }) => {
   return (
-    <Container>
-      <Row>
-        <Col md={3}>
-          <DashboardMenu />
-        </Col>
-        <Col md={9}>{children}</Col>
-      </Row>
-    </Container>
+    <>
+      <DashboardHeader />
+      <Container className="flex-grow-1">{children}</Container>
+    </>
   );
 };
 
