@@ -1,16 +1,15 @@
 import { Roboto, Montserrat_Subrayada } from "next/font/google";
 
 const roboto = Roboto({
-  weight: ["400", "500"],
-  subsets: ["latin"],
-  variable: "--font-roboto",
+	subsets: ["latin"],
+	weight: ["400", "500"],
+    variable: "--font-roboto"
 });
 
 const montserratSubrayada = Montserrat_Subrayada({
-  weight: ["700"],
-  subsets: ["latin"],
-  variable: "--font-montserrat-subrayada",
+	subsets: ["latin"],
+	weight: ["700"],
+    variable: "--font-montserrat-subrayda"
 });
 
-
-export { roboto, montserratSubrayada } 
+export { roboto, montserratSubrayada };

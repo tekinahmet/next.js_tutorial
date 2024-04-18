@@ -1,12 +1,20 @@
-import Slider from '@/components/slider'
-import React from 'react'
+import Slider from "@/components/slider";
+import ClientComponent from "@/components/test/client-component";
+import ServerComponent from "@/components/test/server-component";
+import React from "react";
 
 const HomePage = () => {
-  return (
-    <div>
-      <Slider/>
-    </div>
-  )
-}
+	return (
+		<div>
+			<Slider />
 
-export default HomePage
+			<ClientComponent>
+        <ServerComponent/>
+      </ClientComponent>
+      
+			
+		</div>
+	);
+};
+
+export default HomePage;

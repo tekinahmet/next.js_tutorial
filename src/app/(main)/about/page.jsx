@@ -5,12 +5,18 @@ import Image from "next/image";
 import natureImg from "../../../../public/images/nature.jpg";
 import PageHeader from "@/components/page-header";
 
+
 export const metadata = {
 	title: "About",
-	description: "About our company",
+	description: "About our services, products and campaigns"
 }
+
+
+
 const AboutPage = async () => {
 	//await wait(5000)
+
+	console.log("Static rendering")
 
 	return (
 		<div>
@@ -52,6 +58,7 @@ const AboutPage = async () => {
 				src="https://images.pexels.com/photos/16039120/pexels-photo-16039120/free-photo-of-sunlit-rocks-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
 				width="700"
 				height="500"
+				alt="..."
 			/>
 			<p>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque

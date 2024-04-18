@@ -2,10 +2,9 @@ import PageHeader from '@/components/page-header'
 import Link from 'next/link'
 import React from 'react'
 
-
 export const metadata = {
-  title: "Contact",
-  description: "About our company",
+	title: "Contact",
+	description: "High quality and cheap products",
 };
 
 const ContactPage = () => {

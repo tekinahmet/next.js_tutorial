@@ -1,0 +1,12 @@
+.product-card{
+    cursor: pointer;
+    height: 100%;
+    .image{
+        position: relative;
+        height: 150px;
+
+        img{
+            object-fit: cover;
+        }
+    }
+}
