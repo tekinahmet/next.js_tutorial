@@ -7,7 +7,8 @@ export const transformYupErrors = (errors) => {
 	errors.forEach((error) => (errObject[error.path] = error.message));
 
 	return {
-        message: "Something went wrong",
+		ok: false,
+        message: "Something went wrong.  Try again later.",
         errors: errObject
     };
 };

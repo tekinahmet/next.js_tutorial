@@ -8,12 +8,8 @@ const EditProductPage = async ({ params }) => {
 
 	const res = await fetch(`${config.apiURL}/products/${productId}`);
 	const product = await res.json();
-
-
+6
 	if(!res.ok) notFound();
-
-
-
 
 	return <div>
 		<DashboardProductsEdit product={product}/>

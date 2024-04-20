@@ -1,12 +1,14 @@
-
 $font-family-sans-serif: var(--font-roboto);
 @import "bootstrap/scss/bootstrap";
+@import "sweetalert2/src/sweetalert2";
 
-
-h1,h2,h3{
-    font-family: var(--font-montserrat-subrayda);
+h1,
+h2,
+h3 {
+  font-family: var(--font-montserrat-subrayda);
 }
 
-.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: red;
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: red;
 }
